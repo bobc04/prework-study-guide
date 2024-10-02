@@ -34,15 +34,26 @@
     
       <section class="card" id="git-section" >
         <h2>Git</h2>
+        <h3>Branch/Merge/PR Steps</h3>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li> git checkout ‘name of branch’ (ex: /feature/add-new-cool-widget)  (checks out an existing branch)</li>
+          <li> git checkout -b ‘name of branch’ creates a new branch</li>
+          <li> git status (compares the status of the branch you’re on to the Github repository, it also shows what files  have changed locally.)</li>
+          <li> git add -A (adds files to be committed to the Github repository)</li>
+          <li> git commit -m  (creates a commit with the files you added in git add and a message describing the changes)</li>
+          <li> git pull origin main (pull main working branch from Github to local environment)/li>
+          <li> git push origin feature/add-new-cool-widget (pushes the commit to your Github repository)</li>
+          <li> git checkout main (switch back new main branch (ex: production code)</li>
+          <li> git pull (pulls changes for the branch from the github repository that your local branch may not have)</li>
+          <li> Go to Github and approve pull request (PR)</li>
         </ul>    
       </section>
       
       <section class="card" id="JavaScript-section" >
         <h2>JavaScript</h2>
         <ul>
+          <li>JS adds functionality to websites for developers</li>
+          <li>Using loops and functions saves time when coding in JS and other languages</li>
           <li>A variable is a named container that allows us to store data in our code.</li>
           <li>Control flow is the order in which a computer executes code in a script.</li>
         </ul>    
