@@ -22,5 +22,8 @@ Credits:
 - Dog
 - The Internet
 
+## Sources
+
+All information presented on this website is sourced from external references, publications, and publicly available data. None of the content is original or created by the site owner. Full credit is given to the respective authors, creators, and sources from which this information is drawn. This website serves solely as a curated platform to share publicly available knowledge, and all trademarks, copyrights, and intellectual property remain the property of their respective owners.
 
 
