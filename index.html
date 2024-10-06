@@ -17,23 +17,55 @@
       <!-- Student code goes here -->
 
       <section class="card" id="html-section" >
-        <h2>HTML</h2>
+        <h2>HTML Cheat Sheets</h2>
         <ul>
-          <li>The head element contains information about the webpage.</li>
-          <li>The body element represents the visible content shown to the user.</li>
+          <li><a href="https://htmlcheatsheet.com/">Frank's HTML Cheetsheet!</a></li>
+          <li><a href="https://www.w3schools.com/html/default.asp">W3 Schools HTML Tutorial!</a></li>
+          <li><a href="https://www.geeksforgeeks.org/html-cheat-sheet/">Geeks for Geeks!</a></li>
+          <li><a href="https://html.com/wp-content/uploads/html-cheat-sheet.pdf/">HTML PDF Cheetsheet!</a></li>
+          <li><a href="https://www.youtube.com/watch?v=zutb5Clb_0Y">Youtube Full HTML Course!</a></li>
         </ul>
       </section>
 
       <section class="card" id="css-section" >
-        <h2>CSS</h2>
+        <h2>CSS Cheat Sheets</h2>
         <ul>
-          <li>A margin indicates how much space we want around the outside of an element.</li>
-          <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li><a href="https://www.w3schools.com/w3css/w3css_templates.asp">W3 Schools CSS Templates!</a></li>
+          <li><a href="https://htmlcheatsheet.com/css/">Frank's CSS Cheatsheet!</a></li>
+          <li><a href="https://www.youtube.com/watch?v=jQr-bM6-XTc">Youtube Full CSS Course!</a></li>
+          <li><a href="https://websitesetup.org/wp-content/uploads/2019/11/wsu-css-cheat-sheet-gdocs.pdf">CSS PDF Cheatsheet!</a></li>
+          <li><a href="https://hackr.io/blog/css-cheat-sheet">hackr.io CSS Cheatsheet!</a></li>
         </ul>   
       </section>  
     
       <section class="card" id="git-section" >
-        <h2>Git</h2>
+        <h2>Basic Git Commands</h2>
+
+        <h3>Setup SSH Keys with Github (GH)</h3>
+        <ul>
+          <li><a href="https://github.com/">Sign in or create account on Github</a></li>
+          <li>Check for ssh keys on local machine (ex: id_rsa.pub, id_ecdsa.pub, id_ed25519.pub), run the following command in a terminal: ls -al ~/.ssh (an error that ~/.ssh doesn't exist may be encountered indicating an SSH key pair isn’t found in the default location)</li>
+          <li>If no keys are found generate a new ssh keypair in the terminal with the following command: ssh-keygen -t ed25519 -C “your_email@example.com” (this is the email associated with your GH account)</li>
+          <li>When prompted to "Enter a file in which to save the key", press Enter to accept the default file location or specify another location</li>
+          <li>At the prompt, type a secure passphrase and confirm</li>
+          <li>Add ssh key to the ssh-agent (ssh-agent keeps track of keys and passphrases)</li>
+          <li>Start the ssh-agent in the background with the following command: eval "(ssh-agent -s)" the terminal should return an ‘Agent PID’ ex: Agent pid 12345</li>
+          <li>Add private key to the ssh-agent with the following command: ssh-add ~/ .ssh/id_ed25519 (or the file name for the private key to be used)</li>
+          <li>When prompted, enter passphrase from step 5</li>
+          <li>Copy ssh key to add to GH account with command, terminal Mac/*nix (authorizes the current computer to access the GH account):
+            Windows (with Git Bash installed): clip <> ~/.ssh/id_ed25519.pub
+            Mac/*nix: pbcopy <> ~/.ssh/id_ed25519.pub</li>
+          <li>Next sign in to GH if not already, click on profile pic in the upper right, and scroll down to Settings</li>
+          <li>A panel will open up on the left side of the screen, select SSH and GPG Keys</li>
+          <li>Click on the green New SSH Key button in the upper right</li>
+          <li>The SSH / Add New window will open, give the ssh key a descriptive title (ex: something associated with the machine (Macbook, Kali box, project, etc.)</li>
+          <li> In the Key field, paste key from step 10 and select Add New SSH Key, if prompted, confirm your GH password</li>
+          <li>Next, confirm the process has completed, in terminal type: ssh -T git@github.com</li>
+          <li>Next, confirm the process has completed, in terminal type: ssh -T git@github.com</li>
+        </ul>
+
+<br>
+
         <h3>Branch/Merge/PR Steps</h3>
         <ul>
           <li> git checkout ‘name of branch’ (ex: /feature/add-new-cool-widget)  (checks out an existing branch)</li>
@@ -56,19 +88,20 @@
       </section>
       
       <section class="card" id="JavaScript-section" >
-        <h2>JavaScript</h2>
+        <h2>JavaScript Cheat Sheets</h2>
         <ul>
-          <li>JS adds functionality to websites for developers</li>
-          <li>Using loops and functions saves time when coding in JS and other languages</li>
-          <li>A variable is a named container that allows us to store data in our code.</li>
-          <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li><a href="https://daily.dev/blog/50-javascript-cheat-sheets-for-developers-2024">50+ JavaScript Cheat Sheets for Developers!</a></li>
+          <li><a href="https://www.w3schools.com/js/default.asp">W3 Schools JavaScript Tutorial!</a></li>
+          <li><a href="https://www.youtube.com/watch?v=EerdGm-ehJQ">Youtube Full JS Tutorial!</a></li>
+          <li><a href="https://cheatsheets-js.com/">Cheatsheets-JS!</a></li>
+          <li><a href="https://websitesetup.org/wp-content/uploads/2020/09/Javascript-Cheat-Sheet.pdf">JS PDF Cheat Sheet!</a></li>
         </ul>    
       </section>   
 
     </main>
 
     <footer>
-      <p>I can code!</p>
+      <p>I'm Learning to code!</p>
     </footer> 
     <script src="./assets/script.js"></script> 
   </body>
